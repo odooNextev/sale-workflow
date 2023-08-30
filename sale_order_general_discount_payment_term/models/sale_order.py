@@ -1,5 +1,5 @@
 # Copyright 2023 Nextev
-from odoo import api, fields, models
+from odoo import api, models
 
 
 class SaleOrder(models.Model):
