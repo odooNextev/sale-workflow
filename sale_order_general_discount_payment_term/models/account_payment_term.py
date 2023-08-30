@@ -1,14 +1,10 @@
-from odoo import api, exceptions, fields, models, _
-from odoo.exceptions import UserError, ValidationError
-
-from dateutil.relativedelta import relativedelta
+from odoo import fields, models
 
 
 class AccountPaymentTerm(models.Model):
-    _inherit = "account.payment.term"   
+    _inherit = "account.payment.term"
 
     sale_discount = fields.Float(
-            # compute="_compute_discount",
-            store=True,
-            readonly=False,
-        )
+        store=True,
+        readonly=False,
+    )
