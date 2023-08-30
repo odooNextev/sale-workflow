@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<odoo>
+    <record id="view_partner_form_hide_discount" model="ir.ui.view">
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="sale_order_general_discount.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//page[@name='sales_purchases']//label[@for='sale_discount']"
+                position="attributes"
+            >
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath
+                expr="//page[@name='sales_purchases']//div[field[@name='sale_discount']]"
+                position="attributes"
+            >
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
