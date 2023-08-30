@@ -8,6 +8,7 @@
     "website": "https://github.com/OCA/sale-workflow",
     "author": "Nextev," "Ooops," "Odoo Community Association (OCA)",
     "license": "AGPL-3",
+    "maintainers": ["odooNextev"],
     "application": False,
     "installable": True,
     "depends": ["sale_order_general_discount"],
